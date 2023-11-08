@@ -13,12 +13,6 @@ y = iris_df.target
 # Perform train-test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 
-# Create a directory for data if it doesn't exist
-# data_dir = "./data"
-# model_dir = './model'
-# os.mkdirs(data_dir, exist_ok = True)
-# os.mkdirs(model_dir, exist_ok = True)
-
 # Create and train the logistic regression model
 model = LogisticRegression()
 model.fit(X_train, y_train)
